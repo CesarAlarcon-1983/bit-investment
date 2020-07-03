@@ -9,7 +9,7 @@ var Slider = function() {
                 dots: true,
                 fade: true,
                 arrows:  false,
-                autoplay: true
+                autoplay: false
             });
         });
     }

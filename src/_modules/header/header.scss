@@ -1,15 +1,173 @@
 .header {
-
     $h: &;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: $black;
+    z-index: 999;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;        
+        @include mq(md) {
+            padding: 70px 0 20px;
+        }
+    }
+
+    &__logo {
+        height: 100%;
+        z-index: 1000;
+        height: 50px;
+        
+        @include mq(md) {
+            height: 100px;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        @include mq(md) {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    &__login {
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mq(md) {
+            justify-content: flex-end;
+            padding: 10px 0;
+            height: 50px;
+            
+        }
+    }
+
+    &__login-button {
+        display: block;
+        background: transparent;
+        border: none;
+        height: 100%;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: $white;
+        text-decoration: none;
+        text-align: center;
+        font-family: $menuFont;
+        font-weight: 500;
+
+        @include mq(md) {
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+    }
+    
+    &__register-button {
+        display: block;
+        background: transparent;
+        border: 1px solid $lightGold;
+        height: 100%;
+        border-radius: 5px;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: $lightGold;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        margin-left: 10px;
+        font-family: $menuFont;
+        font-weight: 500;
+        
+        @include mq(md) {
+            padding: 0 10px;
+        }
+    }
+
+    &__nav {
+        @include trans;
+
+        position: absolute;
+        background: $black;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        transform: translateX(-100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mq(md) {
+            justify-content: flex-start;
+            height: 50px;
+            position: static;
+            width: auto;
+            transform: translateX(0);
+        }
+    }
+    
+    &__list {
+        
+        @include mq(md) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        &:not(:first-child) {
+            margin-left: 0;
+            
+            @include mq(md) {
+                margin-left: 20px;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+
+            @include mq(md) {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $white;
+            font-size: 20px;
+            font-family: $menuFont;
+            font-weight: 500;
+
+            @include mq(md) {
+                font-size: 14px;
+            }
+        }
+    }
 
     &__hamburguer {
         cursor: pointer;
         width: 25px;
-        height: 25px;
-        margin: auto;
-        position: absolute;
-        right: 32px;
-        top: 30px;
+        margin-left: 10px;
+
+        @include mq(md) {
+            display: none;
+        }
 
         span {
             background-color: $mainColor;
@@ -49,7 +207,7 @@
         }
 
         #{$h}__nav {
-
+            transform: translateX(0);
         }
     }
 }

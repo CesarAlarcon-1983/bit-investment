@@ -1,3 +1,114 @@
 .home {
-    
+    background: $black;
+    padding-top: 90px;
+    overflow: hidden;
+
+    @include mq(md) {
+        padding-top: 190px;
+    }
+
+    &__hero {
+        background: url('/images/hero.jpg') no-repeat center top / cover;
+        // height: 50vh;
+        position: relative;
+        // margin: 20px 0;
+        padding: 5% 0;        
+        @include mq(md) {
+            margin: 50px 0;
+            background: url('/images/hero.jpg') no-repeat center top / cover;
+        }
+
+        &__background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 130%;
+            height: 0;
+            padding-bottom: 60%;
+
+            @include mq(md) {
+                height: auto;
+                padding-bottom: 0;
+                width: 100%;
+            }
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate3d(-50%, -50%, 0);
+                width: 100%;
+
+                @include mq(md) {
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    transform: translate3d(0,0,0);
+                }
+            }
+        }
+
+        &__container {
+            height: 45vh;
+        }
+
+        &__slider,
+        &__slide {
+            height: 45vh;
+        }
+
+        &__slide {
+            height: 100%;
+            padding-top: 50px;
+        }
+
+        .slick-dots {
+            bottom: 0;
+
+            li {
+                margin: 5px 3px;
+                button {
+                    &:before {
+                        color: $lightGold;
+                        opacity: 1;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .slick-active {
+                button {
+                    &:before {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        &__slogan {
+            color: $white;
+            font-family: $titleFont;
+            
+            @include mq(md) {
+                font-size: 30px;
+            }
+
+            br {
+                display: none;
+
+                @include mq(md) {
+                    display: block;
+                }
+            }
+            
+            span {
+                color: $lightGold;
+                
+                @include mq(md) {
+                    font-size: 66px;
+                }
+            }
+        }
+    }
+
 }

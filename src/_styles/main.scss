@@ -23,6 +23,11 @@ body {
     font-size: $sm;
 }
 
+html {
+  height: 100%;
+  background: $black;
+}
+
 a {
     color:$link;
     transition: all $duration $easingLight;
