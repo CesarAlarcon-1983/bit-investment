@@ -3,18 +3,106 @@ extends _layouts/base
 include ./_modules/slider/slider
 
 block content
-    main.home
-      section.home__hero
-        //- .home__hero__background
-        //-   img(src="/images/hero.jpg")
-        .container
-          .row
-            .col-24
-              .home__hero__container
-                +slider('home__hero__slider')
-                  .home__hero__slide
-                    p.home__hero__slogan La ùltima tecnologìa en Inteligencia Artificial <br><span>al servicio del inversor.</span>
-                  .home__hero__slide
-                    p.home__hero__slogan Lorem ipsum dolor sit amet, consectetur adipiscing elit <br><span>sed do eiusmod tempor</span>
-                  .home__hero__slide
-                    p.home__hero__slogan Ut enim ad minim veniam, quis nostrud exercitation <br><span>laboris nisi ut aliquip</span>
+  main.home
+    section.home__hero
+      //- .home__hero__background
+      //-   img(src="/images/hero.jpg")
+      .container
+        .row
+          .col-24
+            .home__hero__container
+              +slider('home__hero__slider')
+                .home__hero__slide
+                  p.home__hero__slogan La ùltima tecnologìa en Inteligencia Artificial <br><span>al servicio del inversor.</span>
+                .home__hero__slide
+                  p.home__hero__slogan Lorem ipsum dolor sit amet, consectetur adipiscing elit <br><span>sed do eiusmod tempor</span>
+                .home__hero__slide
+                  p.home__hero__slogan Ut enim ad minim veniam, quis nostrud exercitation <br><span>laboris nisi ut aliquip</span>
+  
+    section.home__vision#vision
+      .container
+        .row.home__vision__wrapper
+          .col-24.col-md-8
+            .home__vision__container
+              .home__vision__group
+                .home__vision__image
+                  img(src="https://picsum.photos/id/237/400/100")
+                h3.home__vision__title Portafolios optimizados por Redes Neuronales
+                ul.home__vision__list
+                  li.home__vision__item Máximo rendimiento
+                  li.home__vision__item Minimo riesgo
+                  li.home__vision__item Al alcance de todos
+          .col-24.col-md-8
+            .home__vision__container
+              .home__vision__group
+                .home__vision__image
+                  img(src="https://picsum.photos/id/237/400/100")
+                h3.home__vision__title.home__vision__title--light-gold Comience a invertir ahora
+                .home__vision__cta <a class="home__vision__login-button" href="/login">Inicie sesión</a> o <a class="home__vision__register-button" href="/register">Regístrese aquí</a>
+          .col-24.col-md-8
+            .home__vision__container
+              .home__vision__group
+                .home__vision__image
+                  img(src="https://picsum.photos/id/237/400/100")
+                h3.home__vision__title.home__vision__title--dark-gold Máxima Seguridad y Privacidad
+                ul.home__vision__list
+                  li.home__vision__item Máximo rendimiento
+                  li.home__vision__item Minimo riesgo
+                  li.home__vision__item Al alcance de todos
+        .row
+          .col-24
+            p.home__vision__stats <span>7.566.-</span><span class="green">+1.234.-</span><span class="green">(17%)</span>
+
+    section.home__products#productos
+      .container  
+        .row
+          .col-24.col-md-18.offset-md-3
+            .row
+              .col-24.col-md-8
+                .home__products__container
+                  .home__products__graph
+                    img(src="https://picsum.photos/id/237/500/500")
+                  h3.home__products__title Portfolio
+                  p.home__products__subtitle QTMX - 1H - Bots
+                  ul.home__products__list
+                    li.home__products__item Valor 1 Share: <span>$2300 MXN</span>
+                    li.home__products__item Valor de Incremento <span>450%</span>
+                    li.home__products__item Valor Riesgo <span>Valor Riesgo</span>
+              .col-24.col-md-8
+                .home__products__container
+                  .home__products__graph
+                    img(src="https://picsum.photos/id/237/500/500")
+                  h3.home__products__title Portfolio
+                  p.home__products__subtitle QTMX - MW - 5
+                  ul.home__products__list
+                    li.home__products__item Valor 1 Share: <span>$4500 MXN</span>
+                    li.home__products__item Valor de Incremento <span>650%</span>
+                    li.home__products__item Valor Riesgo <span>Valor Riesgo</span>
+              .col-24.col-md-8
+                .home__products__container
+                  .home__products__graph
+                    img(src="https://picsum.photos/id/237/500/500")
+                  h3.home__products__title Portfolio
+                  p.home__products__subtitle QTMX - EW - 5
+                  ul.home__products__list
+                    li.home__products__item Valor 1 Share: <span>$9600 MXN</span>
+                    li.home__products__item Valor de Incremento <span>950%</span>
+                    li.home__products__item Valor Riesgo <span>Valor Riesgo</span>
+            .row
+              .col-24.col-md-11
+                ul.home__products__benefits
+                  li.home__products__benefit
+                    span 1
+                    p Nuestros algoritmos determinan automáticamente su perfil de inversor y diseñan su portafolio de acuerdo a sus preferencias.
+                  li.home__products__benefit
+                    span 2
+                    p La tecnología IA monitorea sus rendimientos para realizar las optimizaciones necesarias.
+                  li.home__products__benefit
+                    span 3
+                    p Basamos nuestros portafolios en el auge de las inversiones digitales pero nuestra flexibilidad y diversificación nos permiten adaptarnos a los cambios del mercado.
+              .col-24.col-md-11.offset-md-2
+                .home__products__wrapper
+                  h3.home__products__wrapper-title ¿Dudas?
+                  p.home__products__wrapper-text Contáctenos para saber más acerca de nuestros Fondos de Inversión
+                  a.home__products__wrapper-button(href="#contacto") contacto
+
