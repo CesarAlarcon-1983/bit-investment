@@ -1,24 +1,84 @@
 .header {
     $h: &;
 
+    &--scrolled-down {
+        #{$h}__container {
+            @include mq(md) {
+                padding: 10px 0;
+            }
+        }
+
+        #{$h}__logo {
+            @include mq(md) {
+                height: 50px;
+            }
+        }
+
+        #{$h}__login {
+            @include mq(md) {
+                transform: translateY(-100%);
+                height: 0;
+                overflow: hidden;
+                padding: 0;
+            }
+        }
+
+        #{$h}__login-button,
+        #{$h}__register-button {
+            @include mq(md) {
+                opacity: 0;
+            }
+        }
+
+        #{$h}__item {
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+
+    &--scrolled-up {
+        #{$h}__login {
+            @include mq(md) {
+                transform: translateY(0);
+                height: 30px;
+                overflow: visible;
+                // padding: 10px 0;
+            }
+        }
+
+        #{$h}__login-button,
+        #{$h}__register-button {
+            @include mq(md) {
+                opacity: 1;
+            }
+        }
+    }
+
+    @include trans;
+
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background: $black;
     z-index: 999;
+    overflow: hidden;
 
     &__container {
+        @include trans;
         display: flex;
         justify-content: space-between;
-        padding: 20px 0;        
+        padding: 20px 0;
+
         @include mq(md) {
             padding: 70px 0 20px;
         }
     }
 
     &__logo {
-        height: 100%;
+        @include trans;
+
         z-index: 1000;
         height: 50px;
         
@@ -43,6 +103,8 @@
     }
 
     &__login {
+        @include trans;
+
         z-index: 1000;
         display: flex;
         justify-content: center;
@@ -52,11 +114,12 @@
             justify-content: flex-end;
             padding: 10px 0;
             height: 50px;
-            
         }
     }
 
     &__login-button {
+        @include trans;
+
         display: block;
         background: transparent;
         border: none;
@@ -77,6 +140,8 @@
     }
     
     &__register-button {
+        @include trans;
+
         display: block;
         background: transparent;
         border: 1px solid $lightGold;
@@ -122,7 +187,6 @@
     }
     
     &__list {
-        
         @include mq(md) {
             display: flex;
             align-items: center;
