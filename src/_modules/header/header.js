@@ -12,12 +12,12 @@ var Header = function() {
         body.addClass('-hideOverflow');
     });
 
+    //Header resize logic
     var initialScroll = 0;
     var currentScroll = 0;
     var direction;
 
     $(window).on('scroll', function(e) {
-        console.log(e);
         if(initialScroll == 0) {
             currentScroll = $(window)[0].scrollY;
             initialScroll = currentScroll;
@@ -44,21 +44,44 @@ var Header = function() {
             initialScroll = currentScroll;
         }
     })
-    // window.onscroll = function() {resizeHeaderOnScroll()};
 
-    // function resizeHeaderOnScroll() {
-    //     if (body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    //         header.addClass('header--scrolled-down');
-    //     } 
-        
-    //     if(body.scrollTop < 50 || document.documentElement.scrollTop < 50) {
-    //         header.removeClass('header--scrolled-down');
-    //     }
+    //data toggle logic
+    var targets = $('[data-target]');
+    var contents = $('[data-content]');
+    var contentContainer = $('.home__como-invertir__wrapper');
 
-    //     // if() {
-    //     //     header.removeClass('header--scrolled');
-    //     // }
-    // }
+    const contentsHeight = contents.map(function() {
+        return $(this).height();
+    })
+
+    const maxHeight = Math.max.apply(Math,contentsHeight);
+
+    contentContainer.height(maxHeight);
+    
+    $(targets[0]).addClass('-active')
+    $(contents[0]).addClass('-active')
+    $(contents[0]).addClass('-show')
+
+    targets.on('click', function(e) {
+        e.preventDefault();
+
+        targets.removeClass('-active');
+        targets.removeClass('-show');
+        contents.removeClass('-active');
+        contents.removeClass('-show');
+        $(this).addClass('-active');
+
+        var target = $(this).data('target');
+
+        var targettedContent = contents.filter(function() {
+            return $(this).data('content') === target;
+        });
+
+        targettedContent.addClass('-show');
+        setTimeout(() => {
+            targettedContent.addClass('-active');
+        }, 5);
+    })
 };
 
 module.exports = Header;
