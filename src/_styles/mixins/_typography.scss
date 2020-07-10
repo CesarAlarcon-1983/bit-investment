@@ -1,3 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Prata&family=Raleway:ital,wght@0,300;0,500;0,700;0,900;1,300;1,500;1,700;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fonts/fontawesome-webfont.eot?v="4.7.0" !default');
+    src: url('fonts/fontawesome-webfont.eot?#iefix&v="4.7.0" !default') format('embedded-opentype'),
+      url('fonts/fontawesome-webfont.woff2?v="4.7.0" !default') format('woff2'),
+      url('fonts/fontawesome-webfont.woff?v="4.7.0" !default') format('woff'),
+      url('fonts/fontawesome-webfont.ttf?v="4.7.0" !default') format('truetype'),
+      url('fonts/fontawesome-webfont.svg?v="4.7.0" !default#fontawesomeregular') format('svg');
+  //  src: url('fonts/FontAwesome.otf') format('opentype'); // used when developing fonts
+    font-weight: normal;
+    font-style: normal;
+  }
+  

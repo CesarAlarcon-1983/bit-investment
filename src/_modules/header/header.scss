@@ -32,7 +32,9 @@
 
         #{$h}__item {
             a {
-                font-size: 12px;
+                @include mq(md) {
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -63,7 +65,7 @@
     width: 100%;
     background: $black;
     z-index: 999;
-    overflow: hidden;
+    // overflow: hidden;
 
     &__container {
         @include trans;
