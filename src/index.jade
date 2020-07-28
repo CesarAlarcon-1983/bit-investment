@@ -12,46 +12,46 @@ block content
           .col-24
             .home__hero__container
               +slider('home__hero__slider')
-                .home__hero__slide
+                .home__hero__slide.wow.fadeIn
                   p.home__hero__slogan La ùltima tecnologìa en Inteligencia Artificial <br><span>al servicio del inversor.</span>
                 .home__hero__slide
-                  p.home__hero__slogan Lorem ipsum dolor sit amet, consectetur adipiscing elit <br><span>sed do eiusmod tempor</span>
+                  p.home__hero__slogan Portafolios optimizados por <br><span>redes neuronales</span>
                 .home__hero__slide
-                  p.home__hero__slogan Ut enim ad minim veniam, quis nostrud exercitation <br><span>laboris nisi ut aliquip</span>
+                  p.home__hero__slogan Confianza y máxima seguridad <br><span>para invertir</span>
   
     section.home__vision#vision
       .container
         .row.home__vision__wrapper
           .col-24.col-md-8
             .home__vision__container
-              .home__vision__group
+              .home__vision__group.wow.fadeInLeft
                 .home__vision__image
                   img(src="./images/icon-1.png")
-                h3.home__vision__title Portafolios optimizados por Redes Neuronales
-                ul.home__vision__list
-                  li.home__vision__item Máximo rendimiento
-                  li.home__vision__item Minimo riesgo
-                  li.home__vision__item Al alcance de todos
+                h3.home__vision__title Democratizamos el acceso al mercado financiero
+                p.home__vision__text Inversiones más seguras, fáciles y al alcance de todos. Gracias a nuestra tecnología de Inteligencia Artificial, garantizamos un máximo rendimiento con un riesgo mínimo.
           .col-24.col-md-8
             .home__vision__container
-              .home__vision__group
+              .home__vision__group.wow.fadeInUp(data-wow-delay=".5s")
                 .home__vision__image
                   img(src="./images/icon-2.png")
                 h3.home__vision__title.home__vision__title--light-gold Comience a invertir ahora
-                .home__vision__cta <a class="home__vision__login-button" href="/login">Inicie sesión</a> o <a class="home__vision__register-button" href="/register">Regístrese aquí</a>
+                .home__vision__buttons
+                  a.home__vision__button.home__vision__button--ghost(href="/login") Inicie sesión
+                  p o  
+                  a.home__vision__button(href="/register") Regístrese aquí
           .col-24.col-md-8
             .home__vision__container
-              .home__vision__group
+              .home__vision__group.wow.fadeInRight(data-wow-delay="1s")
                 .home__vision__image
                   img(src="./images/icon-3.png")
-                h3.home__vision__title.home__vision__title--dark-gold Máxima Seguridad y Privacidad
-                ul.home__vision__list
-                  li.home__vision__item Máximo rendimiento
-                  li.home__vision__item Minimo riesgo
-                  li.home__vision__item Al alcance de todos
+                h3.home__vision__title.home__vision__title--dark-gold Garantizamos máxima seguridad y privacidad
+                p.home__vision__text Su privacidad es nuestra prioridad. Almacenamos en frío y contamos con un sistema de claves en 3 países para asegurarle confianza y seguridad en sus inversiones.
         .row
           .col-24
-            p.home__vision__stats <span>7.566.-</span><span class="green">+1.234.-</span><span class="green">(17%)</span>
+            .home__vision__chart-container
+              .home__vision__chart.wow.fadeInUp(data-wow-delay=".5s")
+              .home__vision__stats
+                p.home__vision__stats-text <span class="gold">7.566.-</span><span>+1.234.-</span><span>(17%)</span>
 
     section.home__products#productos
       .container  
@@ -59,7 +59,7 @@ block content
           .col-24.col-md-18.offset-md-3
             .row
               .col-24.col-md-8
-                .home__products__container
+                .home__products__container.wow.fadeInLeft
                   .home__products__graph
                     img(src="./images/product-1.png")
                   h3.home__products__title Portfolio
@@ -69,7 +69,7 @@ block content
                     li.home__products__item Valor de Incremento <span>450%</span>
                     li.home__products__item Valor Riesgo <span>Valor Riesgo</span>
               .col-24.col-md-8
-                .home__products__container
+                .home__products__container.wow.fadeInUp(data-wow-delay=".5s")
                   .home__products__graph
                     img(src="./images/product-2.png")
                   h3.home__products__title Portfolio
@@ -79,7 +79,7 @@ block content
                     li.home__products__item Valor de Incremento <span>650%</span>
                     li.home__products__item Valor Riesgo <span>Valor Riesgo</span>
               .col-24.col-md-8
-                .home__products__container
+                .home__products__container.wow.fadeInRight(data-wow-delay="1s")
                   .home__products__graph
                     img(src="./images/product-3.png")
                   h3.home__products__title Portfolio
@@ -89,8 +89,10 @@ block content
                     li.home__products__item Valor de Incremento <span>950%</span>
                     li.home__products__item Valor Riesgo <span>Valor Riesgo</span>
             .row
+              .col-24
+                h2.home__products__benefits-title.wow.fadeInLeft(data-wow-delay="1s") ¿Cómo trabajamos?
               .col-24.col-md-11
-                ul.home__products__benefits
+                ul.home__products__benefits.wow.fadeInLeft(data-wow-delay="1s")
                   li.home__products__benefit
                     span 1
                     p Nuestros algoritmos determinan automáticamente su perfil de inversor y diseñan su portafolio de acuerdo a sus preferencias.
@@ -101,9 +103,9 @@ block content
                     span 3
                     p Basamos nuestros portafolios en el auge de las inversiones digitales pero nuestra flexibilidad y diversificación nos permiten adaptarnos a los cambios del mercado.
               .col-24.col-md-11.offset-md-2
-                .home__products__wrapper
-                  h3.home__products__wrapper-title ¿Dudas?
-                  p.home__products__wrapper-text Contáctenos para saber más acerca de nuestros Fondos de Inversión
+                .home__products__wrapper.wow.fadeInRight(data-wow-delay="1s")
+                  h3.home__products__wrapper-title Comience a invertir en nuestros Fondos de Inversión
+                  p.home__products__wrapper-text Contáctenos para que podamos brindarle más información acerca de nuestros servicios.
                   a.home__products__wrapper-button(href="#contacto") contacto
 
     section.home__como-invertir#como-invertir
@@ -113,38 +115,38 @@ block content
             .home__como-invertir__container
               .row
                 .col-24.col-md-22.offset-md-1
-                  h2.home__como-invertir__title ¿Cómo Invertir?
+                  h2.home__como-invertir__title.wow.fadeInLeft ¿Cómo Invertir?
                 .col-4.col-md-20.offset-md-2
                   .row
                     .col-24.col-md
-                      a.home__como-invertir__step(href="#" data-target="deposito")
+                      a.home__como-invertir__step.wow.fadeInUp(href="#" data-target="deposito")
                         .home__como-invertir__step-image
                           img(src="./images/invertir-1.png")
                         p.home__como-invertir__step-text Depósito
                     .col-24.col-md
-                      a.home__como-invertir__step(href="#" data-target="plan-inversion")
+                      a.home__como-invertir__step.wow.fadeInUp(data-wow-delay=".2s")(href="#" data-target="plan-inversion")
                         .home__como-invertir__step-image
                           img(src="./images/invertir-2.png")
                         p.home__como-invertir__step-text Plan De Inversión
                     .col-24.col-md
-                      a.home__como-invertir__step(href="#" data-target="creacion-portfolio")
+                      a.home__como-invertir__step.wow.fadeInUp(data-wow-delay=".4s")(href="#" data-target="creacion-portfolio")
                         .home__como-invertir__step-image
                           img(src="./images/invertir-3.png")
-                        p.home__como-invertir__step-text Creación de portfolio ideal maximizando retorno
+                        p.home__como-invertir__step-text Creación de portafolio ideal para cada cliente
                     .col-24.col-md
-                      a.home__como-invertir__step(href="#" data-target="ejecucion-portfolio")
+                      a.home__como-invertir__step.wow.fadeInUp(data-wow-delay=".6s")(href="#" data-target="ejecucion-portfolio")
                         .home__como-invertir__step-image
                           img(src="./images/invertir-4.png")
                         p.home__como-invertir__step-text Ejecución de portfolio
                     .col-24.col-md
-                      a.home__como-invertir__step(href="#" data-target="retorno-inversion")
+                      a.home__como-invertir__step.wow.fadeInUp(data-wow-delay=".8s")(href="#" data-target="retorno-inversion")
                         .home__como-invertir__step-image
                           img(src="./images/invertir-5.png")
                         p.home__como-invertir__step-text Retorno de Inversión y optimización constante
                 .col-20.col-md-20.offset-md-2
                   .row
                     .col-24.col-md-10
-                      .home__como-invertir__wrapper-left
+                      .home__como-invertir__wrapper-left.wow.fadeInLeft(data-wow-delay="1s")
                         .home__como-invertir__content(data-content="deposito")
                           h3.home__como-invertir__content-heading Depósito
                           h3.home__como-invertir__content-title Construimos su portafolio a medida asistidos por el análisis de nuestra inteligencia artificial.
@@ -178,38 +180,35 @@ block content
                           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
                     .col-24.col-md-12.offset-md-2
-                      .home__como-invertir__wrapper-right
-                          h3.home__como-invertir__content-title Todos tienen acceso a las herramientas de la élite:
-                          h4.home__como-invertir__content-subtitle No necesitas ser un experto en inversiones, ni manejar grandes capitales.<br><br>Los robots IA hacen todo el trabajo.
+                      .home__como-invertir__wrapper-right.wow.fadeInRight(data-wow-delay="1.2s")
+                          h3.home__como-invertir__content-title Los robots de Inteligencia Artificial hacen todo el trabajo
+                          h4.home__como-invertir__content-subtitle No necesitas ser un experto en inversiones, ni manejar grandes capitales.
                           .home__como-invertir__group
                             .home__como-invertir__group-image
                               img(src="./images/invertir-app.png")
                             .home__como-invertir__group-content
                               h3.home__como-invertir__group-title Conozca nuestra BitSmart App
-                              p.home__como-invertir__group-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              p.home__como-invertir__group-text Próximamente, su asesor financiero de bolsillo.
                               .home__como-invertir__app-links
                                 a.home__como-invertir__app-link(href="/")
                                   img.-align-left(src="./images/google-play.png")
                                 a.home__como-invertir__app-link(href="/")
                                   img.-align-right(src="./images/app-store.png")
-          .col-24.col-md-20.offset-md-2.home__como-invertir__col-modifier
-            .row
-              .col-24.col-md-14
-                p.home__como-invertir__contacto-text Contáctenos para ingresar al Edge Found de BI
-              .col-24.col-md-10
-                a.home__como-invertir__contacto-button(href="#") contacto
+                          .home__como-invertir__group
+                            h3.home__como-invertir__content-title Contáctenos para ingresar al Edge Found de BI
+                            a.home__como-invertir__contacto-button(href="#") contacto
 
     section.home__nosotros#nosotros
       .container
         .row
           .col-24.col-md-18.offset-md-3
             .row
-              .col-24.col-md-11
+              .col-24.col-md-11.wow.fadeInLeft(data-wow-delay=".5s")
                 h2.home__nosotros__title Nosotros.
                 p.home__nosotros__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 p.home__nosotros__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 p.home__nosotros__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              .col-24.col-md-11.offset-md-2
+              .col-24.col-md-11.offset-md-2.wow.fadeInRight(data-wow-delay="1s")
                 h3.home__nosotros__subtitle Seguridad
                 p.home__nosotros__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 h3.home__nosotros__subtitle Raices
