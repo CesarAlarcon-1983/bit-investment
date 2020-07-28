@@ -15,9 +15,9 @@ block content
                 .home__hero__slide
                   p.home__hero__slogan La ùltima tecnologìa en Inteligencia Artificial <br><span>al servicio del inversor.</span>
                 .home__hero__slide
-                  p.home__hero__slogan Lorem ipsum dolor sit amet, consectetur adipiscing elit <br><span>sed do eiusmod tempor</span>
+                  p.home__hero__slogan Portafolios optimizados por <br><span>redes neuronales</span>
                 .home__hero__slide
-                  p.home__hero__slogan Ut enim ad minim veniam, quis nostrud exercitation <br><span>laboris nisi ut aliquip</span>
+                  p.home__hero__slogan Confianza y máxima seguridad <br><span>para invertir</span>
   
     section.home__vision#vision
       .container
@@ -27,31 +27,31 @@ block content
               .home__vision__group
                 .home__vision__image
                   img(src="/images/icon-1.png")
-                h3.home__vision__title Portafolios optimizados por Redes Neuronales
-                ul.home__vision__list
-                  li.home__vision__item Máximo rendimiento
-                  li.home__vision__item Minimo riesgo
-                  li.home__vision__item Al alcance de todos
+                h3.home__vision__title Democratizamos el acceso al mercado financiero
+                p.home__vision__text Inversiones más seguras, fáciles y al alcance de todos. Gracias a nuestra tecnología de Inteligencia Artificial, garantizamos un máximo rendimiento con un riesgo mínimo.
           .col-24.col-md-8
             .home__vision__container
               .home__vision__group
                 .home__vision__image
                   img(src="/images/icon-2.png")
                 h3.home__vision__title.home__vision__title--light-gold Comience a invertir ahora
-                .home__vision__cta <a class="home__vision__login-button" href="/login">Inicie sesión</a> o <a class="home__vision__register-button" href="/register">Regístrese aquí</a>
+                .home__vision__buttons
+                  a.home__vision__button.home__vision__button--ghost(href="/login") Inicie sesión
+                  p o  
+                  a.home__vision__button(href="/register") Regístrese aquí
           .col-24.col-md-8
             .home__vision__container
               .home__vision__group
                 .home__vision__image
                   img(src="/images/icon-3.png")
-                h3.home__vision__title.home__vision__title--dark-gold Máxima Seguridad y Privacidad
-                ul.home__vision__list
-                  li.home__vision__item Máximo rendimiento
-                  li.home__vision__item Minimo riesgo
-                  li.home__vision__item Al alcance de todos
+                h3.home__vision__title.home__vision__title--dark-gold Garantizamos máxima seguridad y privacidad
+                p.home__vision__text Su privacidad es nuestra prioridad. Almacenamos en frío y contamos con un sistema de claves en 3 países para asegurarle confianza y seguridad en sus inversiones.
         .row
           .col-24
-            p.home__vision__stats <span>7.566.-</span><span class="green">+1.234.-</span><span class="green">(17%)</span>
+            .home__vision__chart-container
+              .home__vision__chart
+              .home__vision__stats
+                p.home__vision__stats-text <span class="gold">7.566.-</span><span>+1.234.-</span><span>(17%)</span>
 
     section.home__products#productos
       .container  
@@ -89,6 +89,8 @@ block content
                     li.home__products__item Valor de Incremento <span>950%</span>
                     li.home__products__item Valor Riesgo <span>Valor Riesgo</span>
             .row
+              .col-24
+                h2.home__products__benefits-title ¿Cómo trabajamos?
               .col-24.col-md-11
                 ul.home__products__benefits
                   li.home__products__benefit
@@ -102,8 +104,8 @@ block content
                     p Basamos nuestros portafolios en el auge de las inversiones digitales pero nuestra flexibilidad y diversificación nos permiten adaptarnos a los cambios del mercado.
               .col-24.col-md-11.offset-md-2
                 .home__products__wrapper
-                  h3.home__products__wrapper-title ¿Dudas?
-                  p.home__products__wrapper-text Contáctenos para saber más acerca de nuestros Fondos de Inversión
+                  h3.home__products__wrapper-title Comience a invertir en nuestros Fondos de Inversión
+                  p.home__products__wrapper-text Contáctenos para que podamos brindarle más información acerca de nuestros servicios.
                   a.home__products__wrapper-button(href="#contacto") contacto
 
     section.home__como-invertir#como-invertir
@@ -130,7 +132,7 @@ block content
                       a.home__como-invertir__step(href="#" data-target="creacion-portfolio")
                         .home__como-invertir__step-image
                           img(src="/images/invertir-3.png")
-                        p.home__como-invertir__step-text Creación de portfolio ideal maximizando retorno
+                        p.home__como-invertir__step-text Creación de portafolio ideal para cada cliente
                     .col-24.col-md
                       a.home__como-invertir__step(href="#" data-target="ejecucion-portfolio")
                         .home__como-invertir__step-image
@@ -179,25 +181,26 @@ block content
 
                     .col-24.col-md-12.offset-md-2
                       .home__como-invertir__wrapper-right
-                          h3.home__como-invertir__content-title Todos tienen acceso a las herramientas de la élite:
-                          h4.home__como-invertir__content-subtitle No necesitas ser un experto en inversiones, ni manejar grandes capitales.<br><br>Los robots IA hacen todo el trabajo.
+                          h3.home__como-invertir__content-title Los robots de Inteligencia Artificial hacen todo el trabajo
+                          h4.home__como-invertir__content-subtitle No necesitas ser un experto en inversiones, ni manejar grandes capitales.
                           .home__como-invertir__group
                             .home__como-invertir__group-image
                               img(src="/images/invertir-app.png")
                             .home__como-invertir__group-content
                               h3.home__como-invertir__group-title Conozca nuestra BitSmart App
-                              p.home__como-invertir__group-text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              p.home__como-invertir__group-text Próximamente, su asesor financiero de bolsillo.
                               .home__como-invertir__app-links
                                 a.home__como-invertir__app-link(href="/")
                                   img.-align-left(src="/images/google-play.png")
                                 a.home__como-invertir__app-link(href="/")
                                   img.-align-right(src="/images/app-store.png")
+                          .home__como-invertir__group
+                            h3.home__como-invertir__content-title Contáctenos para ingresar al Edge Found de BI
+                            a.home__como-invertir__contacto-button(href="#") contacto
           .col-24.col-md-20.offset-md-2.home__como-invertir__col-modifier
             .row
               .col-24.col-md-14
-                p.home__como-invertir__contacto-text Contáctenos para ingresar al Edge Found de BI
               .col-24.col-md-10
-                a.home__como-invertir__contacto-button(href="#") contacto
 
     section.home__nosotros#nosotros
       .container
