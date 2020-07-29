@@ -1,7 +1,7 @@
 'use strict';
 
 var Chart = function () {
-  var chartContainer = $('.home__vision__chart');
+  var chartContainer = $('.home__insight__chart');
   var chartWidth = chartContainer.width() - 300;
 
   $(window).resize(function() {

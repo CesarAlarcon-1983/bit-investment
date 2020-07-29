@@ -111,7 +111,7 @@
         }
     }
 
-    &__vision {
+    &__insight {
         padding-bottom: 100px;
 
         @include mq(md) {
@@ -129,13 +129,13 @@
                 right: 15px;
                 bottom: 0;
                 background: $white;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
                 z-index: 2;
             }
 
             & > :nth-child(1) {
-                .home__vision__container {
+                .home__insight__container {
                     &:after {
                         @include mq(md) {
                             content: '';
@@ -163,7 +163,7 @@
                     }
                 }
 
-                .home__vision__image {
+                .home__insight__image {
                     img {
                         height: 60%;
                     }
@@ -171,7 +171,7 @@
             }
 
             & > :nth-child(3) {
-                .home__vision__container {
+                .home__insight__container {
                     &:after {
                         @include mq(md) {
                             content: '';
@@ -199,7 +199,7 @@
                     }
                 }
 
-                .home__vision__image {
+                .home__insight__image {
                     img {
                         height: 60%;
                     }
@@ -309,8 +309,8 @@
             background: $lightGold;
             position: relative;
             z-index: 1;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
             color: $white;
             font-size: 26px;
 
@@ -318,12 +318,12 @@
                 content: '';
                 height: 0;
                 width: 0;
-                border-bottom: 20px solid $lightGold;
-                border-top: 20px solid transparent;
+                border-top: 20px solid $lightGold;
+                border-bottom: 20px solid transparent;
                 border-right: 20px solid transparent;
                 border-left: 20px solid transparent;
                 position: absolute;
-                top: -40px;
+                bottom: -40px;
                 left: 50%;
                 transform: translateX(-50%);
                 z-index: 3000;
@@ -346,8 +346,8 @@
 
         &__chart-container {
             background: $white;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
         }
         
         &__chart {
