@@ -8,14 +8,14 @@
     }
 
     &__hero {
-        background: url('/images/hero.jpg') no-repeat center top / cover;
+        background: url('../images/hero.jpg') no-repeat center top / cover;
         position: relative;
         padding: 100px 0;
         
         @include mq(md) {
             padding: 5% 0;
             margin: 50px 0;
-            background: url('/images/hero.jpg') no-repeat center top / cover;
+            background: url('../images/hero.jpg') no-repeat center top / cover;
         }
 
         &__background {
