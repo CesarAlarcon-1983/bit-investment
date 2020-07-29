@@ -4,22 +4,6 @@ var Chart = function () {
   var chartContainer = $('.home__insight__chart');
   var chartWidth = chartContainer.width() - 300;
 
-  $(window).resize(function() {
-    var viewport = window.innerWidth;
-
-
-    if(viewport >= 720) {
-      chartWidth = chartContainer.width() - 300
-    } else  {
-      chartWidth = chartContainer.width() - 20
-    }
-
-    console.log(viewport);
-    console.log(chartWidth);
-
-    chart.applyOptions({ width: chartWidth })
-  })
-
 
   var chart = LightweightCharts.createChart(chartContainer[0], {
     width: chartWidth,
@@ -1100,6 +1084,24 @@ var Chart = function () {
           close: 193.59
       },
   ]);
+
+  function setChartSize(chart) {
+    var viewport = window.innerWidth;
+
+    if(viewport >= 720) {
+      chartWidth = chartContainer.width() - 300
+    } else  {
+      chartWidth = chartContainer.width() - 20
+    }
+
+    chart.applyOptions({'width':chartWidth});
+  }
+
+  setChartSize(chart);
+
+  $(window).resize(function() {
+    setChartSize(chart);
+  })
 };
 
 module.exports = Chart;
