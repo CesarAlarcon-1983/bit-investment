@@ -14,20 +14,20 @@ var Chart = function () {
     },
     grid: {
         vertLines: {
-            color: '#000',
+            color: '#ebebeb',
         },
         horzLines: {
-            color: '#000',
+            color: '#ebebeb',
         },
     },
     crosshair: {
         mode: LightweightCharts.CrosshairMode.Normal,
     },
     rightPriceScale: {
-        borderColor: '#000',
+        borderColor: '#999',
     },
     timeScale: {
-        borderColor: '#000',
+        borderColor: '#999',
     },
   });
 
