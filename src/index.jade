@@ -19,39 +19,40 @@ block content
                 .home__hero__slide
                   p.home__hero__slogan Confianza y máxima seguridad <br><span>para invertir</span>
   
-    section.home__insight#insight
+    section.home__vision#vision
       .container
         .row
           .col-24
-            .home__insight__chart-container
-              .home__insight__stats
-                p.home__insight__stats-text <span class="gold">7.566.-</span><span>+1.234.-</span><span>(17%)</span>
-              .home__insight__chart.wow.fadeInUp(data-wow-delay=".5s")
-        .row.home__insight__wrapper
-          .col-24.col-md-8.order-2.order-md-1
-            .home__insight__container
-              .home__insight__group.wow.fadeInLeft
-                .home__insight__image
+            .home__vision__chart-container
+              .home__vision__stats
+                p.home__vision__stats-text <span class="gold">7.566.-</span><span>+1.234.-</span><span>(17%)</span>
+              .home__vision__chart.wow.fadeInUp
+        .row.home__vision__wrapper
+          .col-24.col-md-8.order-2.order-md-1.home__vision__col
+            .home__vision__container
+              .home__vision__group.wow.fadeInLeft(data-wow-delay=".5s")
+                .home__vision__image
                   img(src="/images/icon-1.png")
-                h3.home__insight__title Democratizamos el acceso al mercado financiero
-                p.home__insight__text Inversiones más seguras, fáciles y al alcance de todos. Gracias a nuestra tecnología de Inteligencia Artificial, garantizamos un máximo rendimiento con un riesgo mínimo.
-          .col-24.col-md-8.order-1.order-md-2
-            .home__insight__container
-              .home__insight__group.wow.fadeInUp(data-wow-delay=".5s")
-                .home__insight__image
+                h3.home__vision__title Democratizamos el acceso al mercado financiero
+                p.home__vision__text Inversiones más seguras, fáciles y al alcance de todos. Gracias a nuestra tecnología de Inteligencia Artificial, garantizamos un máximo rendimiento con un riesgo mínimo.
+          .col-24.col-md-8.order-1.order-md-2.home__vision__col
+            .home__vision__container
+              .home__vision__group.wow.fadeInUp(data-wow-delay="1s")
+                .home__vision__image
                   img(src="/images/icon-2.png")
-                h3.home__insight__title.home__insight__title--light-gold Comience a invertir ahora
-                .home__insight__buttons
-                  a.home__insight__button.home__insight__button--ghost(href="/login") Inicie sesión
-                  p o  
-                  a.home__insight__button(href="/register") Regístrese aquí
-          .col-24.col-md-8.order-3.order-md-3
-            .home__insight__container
-              .home__insight__group.wow.fadeInRight(data-wow-delay="1s")
-                .home__insight__image
+                h3.home__vision__title.home__vision__title--light-gold Comience a invertir ahora
+                .home__vision__buttons
+                  a.home__vision__button(href="#contacto") contacto
+                  //- a.home__vision__button.home__vision__button--ghost(href="/login") Inicie sesión
+                  //- p o  
+                  //- a.home__vision__button(href="/register") Regístrese aquí
+          .col-24.col-md-8.order-3.order-md-3.home__vision__col
+            .home__vision__container
+              .home__vision__group.wow.fadeInRight(data-wow-delay="1.5s")
+                .home__vision__image
                   img(src="/images/icon-3.png")
-                h3.home__insight__title.home__insight__title--dark-gold Garantizamos máxima seguridad y privacidad
-                p.home__insight__text Su privacidad es nuestra prioridad. Almacenamos en frío y contamos con un sistema de claves en 3 países para asegurarle confianza y seguridad en sus inversiones.
+                h3.home__vision__title.home__vision__title--dark-gold Garantizamos máxima seguridad y privacidad
+                p.home__vision__text Su privacidad es nuestra prioridad. Almacenamos en frío y contamos con un sistema de claves en 3 países para asegurarle confianza y seguridad en sus inversiones.
 
     section.home__products#productos
       .container  
@@ -95,13 +96,13 @@ block content
                 ul.home__products__benefits.wow.fadeInLeft(data-wow-delay="1s")
                   li.home__products__benefit
                     span 1
-                    p Nuestros algoritmos determinan automáticamente su perfil de inversor y diseñan su portafolio de acuerdo a sus preferencias.
+                    p Nuestros algoritmos determinan automáticamente su perfil de inversor y diseñan el mejor portafolio de acuerdo a sus preferencias.
                   li.home__products__benefit
                     span 2
-                    p La tecnología IA monitorea sus rendimientos para realizar las optimizaciones necesarias.
+                    p La tecnología de Inteligencia Artificial monitorea sus rendimientos para realizar las optimizaciones necesarias.
                   li.home__products__benefit
                     span 3
-                    p Basamos nuestros portafolios en el auge de las inversiones digitales pero nuestra flexibilidad y diversificación nos permiten adaptarnos a los cambios del mercado.
+                    p Basamos nuestros portafolios en el auge de las criptomonedas pero nuestra flexibilidad y diversificación nos permiten adaptarnos a los cambios del mercado.
               .col-24.col-md-11.offset-md-2
                 .home__products__wrapper.wow.fadeInRight(data-wow-delay="1s")
                   h3.home__products__wrapper-title Comience a invertir en nuestros Fondos de Inversión
@@ -137,7 +138,7 @@ block content
                       a.home__como-invertir__step.wow.fadeInUp(data-wow-delay=".6s")(href="#" data-target="ejecucion-portfolio")
                         .home__como-invertir__step-image
                           img(src="./images/invertir-4.png")
-                        p.home__como-invertir__step-text Ejecución de portfolio
+                        p.home__como-invertir__step-text Ejecución de portafolio
                     .col-24.col-md
                       a.home__como-invertir__step.wow.fadeInUp(data-wow-delay=".8s")(href="#" data-target="retorno-inversion")
                         .home__como-invertir__step-image
@@ -150,9 +151,9 @@ block content
                         .home__como-invertir__content(data-content="deposito")
                           h3.home__como-invertir__content-heading Depósito
                           h3.home__como-invertir__content-title Construimos su portafolio a medida asistidos por el análisis de nuestra inteligencia artificial.
-                          h4.home__como-invertir__content-subtitle Nuestro algoritmos de redes neuronales son capaces de:
+                          h4.home__como-invertir__content-subtitle Nuestros algoritmos de redes neuronales son capaces de:
                           ul.home__como-invertir__content-list
-                            li.home__como-invertir__content-item Analizar las tendencias de mercado y predecir el futuro cercano.
+                            li.home__como-invertir__content-item Analizar las tendencias del mercado y predecir el futuro cercano.
                             li.home__como-invertir__content-item Analizar el portafolio del inversor y sugerir optimizaciones.
                             li.home__como-invertir__content-item Analizar gastos del inversor y sugerir optimizaciones de ahorro, generando un mayor capital de inversión.
                         .home__como-invertir__content(data-content="plan-inversion")
@@ -166,7 +167,7 @@ block content
                           h4.home__como-invertir__content-subtitle Nuestro algoritmos de redes neuronales son capaces de:
                           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         .home__como-invertir__content(data-content="ejecucion-portfolio")
-                          h3.home__como-invertir__content-heading Ejecución de Portafolio
+                          h3.home__como-invertir__content-heading Ejecución del Portafolio
                           h3.home__como-invertir__content-title Construimos su portafolio a medida asistidos por el análisis de nuestra inteligencia artificial.
                           h4.home__como-invertir__content-subtitle Nuestro algoritmos de redes neuronales son capaces de:
                           p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -195,7 +196,7 @@ block content
                                 a.home__como-invertir__app-link(href="/")
                                   img.-align-right(src="./images/app-store.png")
                           .home__como-invertir__group
-                            h3.home__como-invertir__content-title Contáctenos para ingresar al Edge Found de BI
+                            h3.home__como-invertir__content-title Contáctenos para ingresar al Hedge Found de BI
                             a.home__como-invertir__contacto-button(href="#") contacto
 
     section.home__nosotros#nosotros
@@ -203,12 +204,12 @@ block content
         .row
           .col-24.col-md-18.offset-md-3
             .row
-              .col-24.col-md-11.wow.fadeInLeft(data-wow-delay=".5s")
+              .col-24.col-md-11.wow.fadeInLeft
                 h2.home__nosotros__title Nosotros.
                 p.home__nosotros__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 p.home__nosotros__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 p.home__nosotros__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              .col-24.col-md-11.offset-md-2.wow.fadeInRight(data-wow-delay="1s")
+              .col-24.col-md-11.offset-md-2.wow.fadeInRight(data-wow-delay=".5s")
                 h3.home__nosotros__subtitle Seguridad
                 p.home__nosotros__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 h3.home__nosotros__subtitle Raices

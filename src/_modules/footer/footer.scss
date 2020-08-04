@@ -216,7 +216,7 @@
         &::placeholder {
             @include trans;
 
-            color: $darkestGray;
+            color: $darkGray;
         }
 
         &--textarea {
